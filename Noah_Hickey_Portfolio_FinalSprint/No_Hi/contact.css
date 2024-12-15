@@ -1,0 +1,221 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+}
+
+
+body{
+    min-height: 200px;
+    background-color: rgb(164, 164, 164);
+}
+
+header{
+    text-align:center;
+    font-weight: bold;
+    color: white;
+}
+
+
+nav{
+    width: 100%;
+    height:75px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: rgb(0, 123, 255);
+    color: black; 
+    padding: 10px 0;
+    margin-bottom: 100px; 
+}
+
+nav a {
+    color: black;
+    font-size: 18px; 
+    text-decoration: none; 
+    padding: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+nav a:hover {
+    color: white;  
+    border-radius: 5px; 
+}
+
+nav a:hover img {
+    transform: scale(1.15); 
+    transition: transform 0.3s ease;
+    filter: grayscale(100%); /* Black and white on hover */
+    
+}
+
+.nav-logo {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    margin-right: 15px;
+    object-fit: cover; 
+}
+
+.nav-spacer {
+    height: 100px;
+} 
+
+.contact {
+    margin-top: 2rem;
+  }
+  
+  .contact h1 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+  }
+  
+  .contact-form-container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+  }
+
+  .contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.0rem;
+    font-size: 14px;
+  }
+  
+  .contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset rgb(0, 123, 255);
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+
+  .submit-btn:hover {
+    background-color: rgb(0, 123, 255);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 5%;
+    bottom: 50%;
+    top:50%;
+  }
+  
+  .socicon {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 75px;;
+  }
+  .socials :hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease;
+  }
+
+  .whitetext {
+    color:white;
+    text-align: center;
+}
+
+footer{
+  width: 100%;
+  height:75px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  background-color: rgb(0, 123, 255);
+  color: black; 
+  padding: 10px 0;
+  margin-top: 25px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+
+    body {
+      font-size: 14px; /* Adjust base font size */
+  }
+
+  header h1, .skill-header, .projects-title {
+      font-size: 18px; /* Reduce header font size */
+  }
+
+  img {
+      width: 100%; /* Ensure all images scale */
+      height: auto;
+  }
+  nav {
+      flex-direction: column; /* Stack navigation links vertically */
+      align-items: center;
+      height: auto; /* Adjust height */
+  }
+
+  nav a {
+      font-size: 16px; /* Smaller font size */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .nav-logo {
+      width: 40px; /* Scale down logo */
+      height: 40px;
+  }
+
+  .contact-form-container {
+    padding: 10px;
+}
+
+.form-control {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-field {
+    width: 100%; /* Full width on small screens */
+}
+
+.submit-btn {
+    font-size: 14px; /* Adjust button text size */
+    padding: 8px;
+}
+
+footer {
+  font-size: 14px; /* Smaller font for footer */
+  text-align: center; /* Center footer text */
+}
+}
+
+

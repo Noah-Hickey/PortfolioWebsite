@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Hickey Portfolio Home</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+
+    <nav>
+        <a href="index.html"><img src="Images/No_Hi_Pic.JPG" alt="Logo" class="nav-logo"></a>
+        <a href="education.html">Education & Experience</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+<body>
+
+    <section class="contact" id="contact">
+        <h1 span class="whitetext">Get In Touch With Me</h1>
+        <div class="contact-form-container">
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+                />
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+                />
+            </div>
+            <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+                ></textarea>
+            </div>
+            <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+            />
+            </form>
+        </div>
+        </div>
+
+        <div class="socials">
+            <a href="https://github.com/Noah-Hickey" target="_blank"
+        ><img
+          src="./Images/GitHub.png"
+          alt="Check out my projects on GitHub!"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/noah-hickey-ba9019307/" target="_blank"
+        ><img
+          src="./Images/linkedin.png"
+          alt="Find me on LinkedIn!"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      </div>
+
+    </section>
+
+    <footer>
+        <h2>Noah Hickey | 2024</h2>
+      </footer>
+
+    <script src="contact.js"></script>
+
+</body>
